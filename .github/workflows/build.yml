@@ -1,0 +1,42 @@
+name: Build
+
+on:
+  workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Config Git
+      run: |
+        git config user.name github-actions[bot]
+        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+    - name: Install Dependence
+      run: |
+        sudo apt install g++
+        sudo apt install curl
+
+    - name: Compile and Run
+      run: |
+        g++ main.cpp -o main.out -O2 -std=c++17
+        main.out
+
+    - name: Push files
+      run: |
+        if [[ `git status --porcelain` ]]; then
+          echo Changes.
+          git add .
+          git commit -m "Update"
+          git push
+        else
+          echo No Changes.
+        fi
