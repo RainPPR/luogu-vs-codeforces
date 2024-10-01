@@ -23,7 +23,7 @@ jobs:
     - name: Install Dependence
       run: |
         sudo apt install -y build-essential
-        curl https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp -o json.hpp
+        curl curl https://ghp.ci/https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp -o json.hpp -o json.hpp
 
     - name: Compile and Run
       run: |
