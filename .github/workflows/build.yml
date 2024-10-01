@@ -20,8 +20,10 @@ jobs:
         git config user.name github-actions[bot]
         git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
-    # - name: Install Dependence
-    #   run: sudo apt install -y build-essential
+    - name: Install Dependence
+      run: |
+        sudo apt install -y build-essential
+        curl https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp -o json.hpp
 
     - name: Compile and Run
       run: |
