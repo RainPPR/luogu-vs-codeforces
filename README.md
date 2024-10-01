@@ -24,20 +24,20 @@
 
 本地运行：
 
-1.  Clone 这个仓库。
-2.  修改 `main.cpp` 中主函数 `main()` 中的洛谷 uid 和 CodeForces 用户名。
+1.  Clone [这个仓库](https://github.com/RainPPR/luogu-vs-codeforces)。
+2.  修改 [`main.cpp`](https://github.com/RainPPR/luogu-vs-codeforces/blob/main/main.cpp) 中主函数 `main()` 中的洛谷 uid 和 CodeForces 用户名。
 3.  将 nlohmann 的 [json.hpp](https://ghp.ci/https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp) 复制到同一文件夹，编译。
 4.  确保您的电脑已安装 curl 并在 path 中或在同一文件夹，运行后 `table.csv` 在同一文件夹下。
 
 在 Github 中使用 Actions：
 
-1.  Fork 这个仓库。
-2.  修改 `main.cpp` 中主函数 `main()` 中的洛谷 uid 和 CodeForces 用户名。
+1.  Fork [这个仓库](https://github.com/RainPPR/luogu-vs-codeforces)。
+2.  修改 [`main.cpp`](https://github.com/RainPPR/luogu-vs-codeforces/blob/main/main.cpp) 中主函数 `main()` 中的洛谷 uid 和 CodeForces 用户名。
 4.  启用 Actions 并手动运行 Build 工作流，运行后 `table.csv` 在根目录。
 
 ### 开发教程
 
-以下是对代码 `main.cpp` 的说明：
+以下是对代码 [`main.cpp`](https://github.com/RainPPR/luogu-vs-codeforces/blob/main/main.cpp) 的说明：
 
 ```cpp
 int run(string op) {
