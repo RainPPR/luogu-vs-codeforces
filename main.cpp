@@ -66,7 +66,7 @@ signed main() {
 	run("mkdir data");
 
 	auto luogu = get_luogu(371511);
-	auto codeforces = get_vjudge("RainPPR");
+	auto codeforces = get_codeforces("RainPPR");
 
 	ofstream fout("table.csv");
 	fout << "pid,title,origin,luogu,vjudge" << endl;
