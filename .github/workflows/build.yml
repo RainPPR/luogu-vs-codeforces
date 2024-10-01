@@ -20,15 +20,15 @@ jobs:
         git config user.name github-actions[bot]
         git config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
-    - name: Install Dependence
-      run: |
-        sudo apt install g++
-        sudo apt install curl
+    # - name: Install Dependence
+    #   run: |
+    #     sudo apt install g++
+    #     sudo apt install curl
 
     - name: Compile and Run
       run: |
         g++ main.cpp -o main.out -O2 -std=c++17
-        main.out
+        ./main.out
 
     - name: Push files
       run: |
