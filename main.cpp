@@ -24,7 +24,7 @@ unordered_set<string> get_luogu(uint64_t uid) {
 	auto problems = json::parse(f)["currentData"]["passedProblems"];
 	for (auto problem : problems) {
 		if (problem["type"] != "CF")
-			continue;
+			continue;	// Vjudge
 		ac_luogu_cf.insert(string(problem["pid"]).substr(2));
 	}
 
@@ -40,9 +40,9 @@ unordered_set<string> get_codeforces(string name) {
 	unordered_set<string> ac_cf;
 
 	auto problems = json::parse(f)["data"]["solvedList"];
-	for (auto problem : problems) {
-		if (problem.size() >= 7)	// CodeForces Gym
-			continue;
+	for (string problem : problems) {
+		if (problem.size() >= 7)
+			continue;	// CodeForces Gym
 		ac_cf.insert(problem);
 	}
 
@@ -52,7 +52,10 @@ unordered_set<string> get_codeforces(string name) {
 string get_title(string pid) {
 	string filename = "./data/CF" + pid + ".json";
 
-	run("curl https://www.luogu.com.cn/problem/CF" + pid + "?_contentOnly=1 -o " + filename);
+	static int tot = 0;
+	cout << "GET #" << ++tot << endl;
+
+	run("curl https://www.luogu.com.cn/problem/CF" + pid + "?_contentOnly=1 -s -o " + filename);
 
 	ifstream f(filename);
 
