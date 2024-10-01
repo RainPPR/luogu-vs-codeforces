@@ -18,8 +18,6 @@ unordered_set<string> get_luogu(uint64_t uid) {
 
 	run("curl https://www.luogu.com.cn/user/" + s_uid + "?_contentOnly=1 -s -o " + filename);
 
-	run("cat " + filename);
-
 	ifstream f(filename);
 	unordered_set<string> ac_luogu_cf;
 
@@ -33,23 +31,19 @@ unordered_set<string> get_luogu(uint64_t uid) {
 	return ac_luogu_cf;
 }
 
-unordered_set<string> get_vjudge(string name) {
+unordered_set<string> get_codeforces(string name) {
 	string filename = "./data/" + name + ".json";
 
-	// curl -X GET 'https://vjudge.net/user/solveDetail/RainPPR' -H 'Content-Type:application/json'
-
-	run("curl -X GET 'https://vjudge.net/user/solveDetail/" + name + "' -H 'Content-Type:application/json' --dns-ipv4-addr 223.5.5.5 -4 -s -o " + filename);
-
-	run("cat " + filename);
+	run("curl https://ojhunt.com/api/crawlers/codeforces/" + name + " -s -o " + filename);
 
 	ifstream f(filename);
-	unordered_set<string> ac_vjudge_cf;
+	unordered_set<string> ac_cf;
 
-	auto problems = json::parse(f)["acRecords"]["CodeForces"];
+	auto problems = json::parse(f)["data"]["solvedList"];
 	for (auto problem : problems)
-		ac_vjudge_cf.insert(problem);
+		ac_cf.insert(problem);
 
-	return ac_vjudge_cf;
+	return ac_cf;
 }
 
 string get_title(string pid) {
@@ -72,13 +66,12 @@ signed main() {
 	run("mkdir data");
 
 	auto luogu = get_luogu(371511);
-	auto vjudge = get_vjudge("RainPPR");
+	auto codeforces = get_vjudge("RainPPR");
 
 	ofstream fout("table.csv");
-
 	fout << "pid,title,origin,luogu,vjudge" << endl;
 
-	for (auto pid : vjudge) {
+	for (auto pid : codeforces) {
 		if (luogu.count(pid) != 0)
 			continue;
 
@@ -92,7 +85,6 @@ signed main() {
 	}
 
 	fout.close();
-
 	return 0;
 }
 
