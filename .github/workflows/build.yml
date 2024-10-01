@@ -23,12 +23,9 @@ jobs:
     # - name: Install Dependence
     #   run: sudo apt install -y build-essential
 
-    - name: Compile
-      run: g++ main.cpp -o main.out -O2 -std=c++17
-
-    - name: Run
+    - name: Compile and Run
       run: |
-        ls
+        g++ main.cpp -o main.out -O2 -std=c++17
         ./main.out
 
     - name: Push files

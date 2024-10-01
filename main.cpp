@@ -16,7 +16,7 @@ unordered_set<string> get_luogu(uint64_t uid) {
 	string s_uid = to_string(uid);
 	string filename = "./data/" + s_uid + ".json";
 
-	run("curl https://www.luogu.com.cn/user/" + s_uid + "?_contentOnly=1 -s -o " + filename);
+	run("curl https://www.luogu.com.cn/user/" + s_uid + "?_contentOnly=1 -o " + filename);
 
 	ifstream f(filename);
 	unordered_set<string> ac_luogu_cf;
@@ -34,7 +34,7 @@ unordered_set<string> get_luogu(uint64_t uid) {
 unordered_set<string> get_codeforces(string name) {
 	string filename = "./data/" + name + ".json";
 
-	run("curl https://ojhunt.com/api/crawlers/codeforces/" + name + " -s -o " + filename);
+	run("curl https://ojhunt.com/api/crawlers/codeforces/" + name + " -o " + filename);
 
 	ifstream f(filename);
 	unordered_set<string> ac_cf;
@@ -49,7 +49,7 @@ unordered_set<string> get_codeforces(string name) {
 string get_title(string pid) {
 	string filename = "./data/CF" + pid + ".json";
 
-	run("curl https://www.luogu.com.cn/problem/CF" + pid + "?_contentOnly=1 -s -o " + filename);
+	run("curl https://www.luogu.com.cn/problem/CF" + pid + "?_contentOnly=1 -o " + filename);
 
 	ifstream f(filename);
 
