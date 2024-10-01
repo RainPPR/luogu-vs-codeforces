@@ -36,7 +36,10 @@ unordered_set<string> get_luogu(uint64_t uid) {
 unordered_set<string> get_vjudge(string name) {
 	string filename = "./data/" + name + ".json";
 
-	run("curl https://vjudge.net/user/solveDetail/" + name + " -s -X POST -o " + filename);
+	// wget https://vjudge.net/user/solveDetail/RainPPR -O data/RainPPR.json -q
+
+	// run("curl https://vjudge.net/user/solveDetail/" + name + " -s -X POST -o " + filename);
+	run("wget https://vjudge.net/user/solveDetail/" + name + " -q -O " + filename);
 
 	run("cat " + filename);
 
