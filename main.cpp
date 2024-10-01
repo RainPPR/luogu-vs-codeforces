@@ -1,11 +1,9 @@
 #include <bits/stdc++.h>
 
 #include "nlohmann/json.hpp"
-#include "indicators/indicators.hpp"
 
 using json = nlohmann::json;
 
-using namespace indicators;
 using namespace std;
 
 // -----------------------------------------------------------------------------
@@ -16,7 +14,7 @@ int run(string op) {
 
 unordered_set<string> get_luogu(uint64_t uid) {
 	string s_uid = to_string(uid);
-	string filename = ".\\data\\" + s_uid + ".json";
+	string filename = "./data/" + s_uid + ".json";
 
 	run("curl https://www.luogu.com.cn/user/" + s_uid + "?_contentOnly=1 -s -o " + filename);
 
@@ -34,7 +32,7 @@ unordered_set<string> get_luogu(uint64_t uid) {
 }
 
 unordered_set<string> get_vjudge(string name) {
-	string filename = ".\\data\\" + name + ".json";
+	string filename = "./data/" + name + ".json";
 
 	run("curl https://vjudge.net/user/solveDetail/" + name + " -s -o " + filename);
 
@@ -49,7 +47,7 @@ unordered_set<string> get_vjudge(string name) {
 }
 
 string get_title(string pid) {
-	string filename = ".\\data\\CF" + pid + ".json";
+	string filename = "./data/CF" + pid + ".json";
 
 	run("curl https://www.luogu.com.cn/problem/CF" + pid + "?_contentOnly=1 -s -o " + filename);
 
