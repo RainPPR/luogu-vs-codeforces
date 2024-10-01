@@ -31,10 +31,10 @@ jobs:
     - name: Push files
       run: |
         if [[ `git status --porcelain` ]]; then
-          echo Changes.
+          echo True
           git add .
           git commit -m "Update"
           git push
         else
-          echo No Changes.
+          echo False
         fi
