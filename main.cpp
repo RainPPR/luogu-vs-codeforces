@@ -40,8 +40,11 @@ unordered_set<string> get_codeforces(string name) {
 	unordered_set<string> ac_cf;
 
 	auto problems = json::parse(f)["data"]["solvedList"];
-	for (auto problem : problems)
+	for (auto problem : problems) {
+		if (problem.size() >= 7)	// CodeForces Gym
+			continue;
 		ac_cf.insert(problem);
+	}
 
 	return ac_cf;
 }
