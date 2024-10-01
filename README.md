@@ -2,13 +2,13 @@
  
 ## 声明：本脚本仅供个人学习使用！
 
-#### 介绍
+### 介绍
 
 众所周知（截止到 2024-09）洛谷的 CodeForces RMJ 很不稳定，很多人选择在 CodeForces 原站 / Vjudge 提交。
 
 这个脚本可以自动爬取 CodeForces 原站的通过记录，自动与洛谷的通过记录匹配并将已在 CodeForces 通过但是洛谷没有通过的题目记录在根目录 `table.csv` 里面。
 
-#### 软件架构
+### 软件架构
 
 使用 C++ (C++17) 编写，使用 <https://github.com/nlohmann/json> 作为解析 json 的库。
 
@@ -18,9 +18,9 @@
 
 后期可能加入 ojhunt 的 vjudge 接口（暂时不考虑加入，因为作者本人习惯在 vjudge 绑定 CodeForces 账号）。
 
-另外，曾经考虑使用 vjudge 官方 api 但是在 Github Actions 上面返回了 `Enable JavaScript and cookies to continue`。
+另外，曾经考虑使用 vjudge 官方 api 但是在 Github Actions 上面抓包会出问题（只会 curl 嘤嘤嘤）。
 
-#### 安装教程
+### 安装教程
 
 本地运行：
 
@@ -35,7 +35,7 @@
 2.  修改 `main.cpp` 中主函数 `main()` 中的洛谷 uid 和 CodeForces 用户名。
 4.  启用 Actions 并手动运行 Build 工作流，运行后 `table.csv` 在根目录。
 
-#### 开发教程
+### 开发教程
 
 以下是对代码 `main.cpp` 的说明：
 
