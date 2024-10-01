@@ -38,7 +38,7 @@ unordered_set<string> get_vjudge(string name) {
 
 	// curl -X GET 'https://vjudge.net/user/solveDetail/RainPPR' -H 'Content-Type:application/json'
 
-	run("curl -X GET 'https://vjudge.net/user/solveDetail/" + name + "' -H 'Content-Type:application/json' -s -o " + filename);
+	run("curl -X GET 'https://vjudge.net/user/solveDetail/" + name + "' -H 'Content-Type:application/json' --dns-ipv4-addr 223.5.5.5 -4 -s -o " + filename);
 
 	run("cat " + filename);
 
