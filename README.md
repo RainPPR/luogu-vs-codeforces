@@ -1,3 +1,5 @@
+# [luogu-vs-codeforces](https://github.com/RainPPR/luogu-vs-codeforces)
+
 # 声明：本脚本仅供个人学习使用！
 
 ### 介绍
