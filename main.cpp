@@ -18,6 +18,8 @@ unordered_set<string> get_luogu(uint64_t uid) {
 
 	run("curl https://www.luogu.com.cn/user/" + s_uid + "?_contentOnly=1 -s -o " + filename);
 
+	run("cat " + filename);
+
 	ifstream f(filename);
 	unordered_set<string> ac_luogu_cf;
 
@@ -35,6 +37,8 @@ unordered_set<string> get_vjudge(string name) {
 	string filename = "./data/" + name + ".json";
 
 	run("curl https://vjudge.net/user/solveDetail/" + name + " -s -o " + filename);
+
+	run("cat " + filename);
 
 	ifstream f(filename);
 	unordered_set<string> ac_vjudge_cf;
