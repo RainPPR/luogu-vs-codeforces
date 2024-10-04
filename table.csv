@@ -1,6 +1,6 @@
 pid,title,origin,luogu,vjudge
 CF1719D1,"",CodeForces,,https://vjudge.net/problem/CodeForces-1719D1
-CF854C,"",CodeForces,,https://vjudge.net/problem/CodeForces-854C
+CF1719D2,"",CodeForces,,https://vjudge.net/problem/CodeForces-1719D2
 CF1630B,"Range and Partition",CodeForces,https://www.luogu.com.cn/problem/CF1630B,https://vjudge.net/problem/CodeForces-1630B
 CF1888C,"",CodeForces,,https://vjudge.net/problem/CodeForces-1888C
 CF55D,"Beautiful numbers",CodeForces,https://www.luogu.com.cn/problem/CF55D,https://vjudge.net/problem/CodeForces-55D
@@ -8,22 +8,27 @@ CF1824C,"LuoTianyi and XOR-Tree",CodeForces,https://www.luogu.com.cn/problem/CF1
 CF1710C,"XOR Triangle",CodeForces,https://www.luogu.com.cn/problem/CF1710C,https://vjudge.net/problem/CodeForces-1710C
 CF126B,"Password",CodeForces,https://www.luogu.com.cn/problem/CF126B,https://vjudge.net/problem/CodeForces-126B
 CF898F,"Restoring the Expression",CodeForces,https://www.luogu.com.cn/problem/CF898F,https://vjudge.net/problem/CodeForces-898F
-CF1101D,"GCD Counting",CodeForces,https://www.luogu.com.cn/problem/CF1101D,https://vjudge.net/problem/CodeForces-1101D
-CF1375C,"Element Extermination",CodeForces,https://www.luogu.com.cn/problem/CF1375C,https://vjudge.net/problem/CodeForces-1375C
 CF1556D,"Take a Guess",CodeForces,https://www.luogu.com.cn/problem/CF1556D,https://vjudge.net/problem/CodeForces-1556D
+CF1375C,"Element Extermination",CodeForces,https://www.luogu.com.cn/problem/CF1375C,https://vjudge.net/problem/CodeForces-1375C
 CF1098D,"Eels",CodeForces,https://www.luogu.com.cn/problem/CF1098D,https://vjudge.net/problem/CodeForces-1098D
-CF1375F,"Integer Game",CodeForces,https://www.luogu.com.cn/problem/CF1375F,https://vjudge.net/problem/CodeForces-1375F
 CF914F,"Substrings in a String",CodeForces,https://www.luogu.com.cn/problem/CF914F,https://vjudge.net/problem/CodeForces-914F
 CF1648B,"Integral Array",CodeForces,https://www.luogu.com.cn/problem/CF1648B,https://vjudge.net/problem/CodeForces-1648B
+CF1375F,"Integer Game",CodeForces,https://www.luogu.com.cn/problem/CF1375F,https://vjudge.net/problem/CodeForces-1375F
 CF1556C,"Compressed Bracket Sequence",CodeForces,https://www.luogu.com.cn/problem/CF1556C,https://vjudge.net/problem/CodeForces-1556C
 CF375D,"Tree and Queries",CodeForces,https://www.luogu.com.cn/problem/CF375D,https://vjudge.net/problem/CodeForces-375D
 CF371D,"Vessels",CodeForces,https://www.luogu.com.cn/problem/CF371D,https://vjudge.net/problem/CodeForces-371D
-CF1032F,"Vasya and Maximum Matching",CodeForces,https://www.luogu.com.cn/problem/CF1032F,https://vjudge.net/problem/CodeForces-1032F
+CF1394A,"Boboniu Chats with Du",CodeForces,https://www.luogu.com.cn/problem/CF1394A,https://vjudge.net/problem/CodeForces-1394A
+CF1396B,"Stoned Game",CodeForces,https://www.luogu.com.cn/problem/CF1396B,https://vjudge.net/problem/CodeForces-1396B
+CF1442A,"Extreme Subtraction",CodeForces,https://www.luogu.com.cn/problem/CF1442A,https://vjudge.net/problem/CodeForces-1442A
 CF76E,"Points",CodeForces,https://www.luogu.com.cn/problem/CF76E,https://vjudge.net/problem/CodeForces-76E
+CF1101D,"GCD Counting",CodeForces,https://www.luogu.com.cn/problem/CF1101D,https://vjudge.net/problem/CodeForces-1101D
+CF1032F,"Vasya and Maximum Matching",CodeForces,https://www.luogu.com.cn/problem/CF1032F,https://vjudge.net/problem/CodeForces-1032F
 CF1637D,"Yet Another Minimization Problem",CodeForces,https://www.luogu.com.cn/problem/CF1637D,https://vjudge.net/problem/CodeForces-1637D
 CF1704E,"Count Seconds",CodeForces,https://www.luogu.com.cn/problem/CF1704E,https://vjudge.net/problem/CodeForces-1704E
 CF104C,"",CodeForces,,https://vjudge.net/problem/CodeForces-104C
+CF854C,"",CodeForces,,https://vjudge.net/problem/CodeForces-854C
 CF1491D,"Zookeeper and The Infinite Zoo",CodeForces,https://www.luogu.com.cn/problem/CF1491D,https://vjudge.net/problem/CodeForces-1491D
+CF1508B,"Almost Sorted",CodeForces,https://www.luogu.com.cn/problem/CF1508B,https://vjudge.net/problem/CodeForces-1508B
 CF1375D,"Replace by MEX",CodeForces,https://www.luogu.com.cn/problem/CF1375D,https://vjudge.net/problem/CodeForces-1375D
 CF893D,"Credit Card",CodeForces,https://www.luogu.com.cn/problem/CF893D,https://vjudge.net/problem/CodeForces-893D
 CF1548B,"Integers Have Friends",CodeForces,https://www.luogu.com.cn/problem/CF1548B,https://vjudge.net/problem/CodeForces-1548B
@@ -36,5 +41,3 @@ CF39J,"Spelling Check",CodeForces,https://www.luogu.com.cn/problem/CF39J,https:/
 CF1500A,"Going Home",CodeForces,https://www.luogu.com.cn/problem/CF1500A,https://vjudge.net/problem/CodeForces-1500A
 CF1324F,"Maximum White Subtree",CodeForces,https://www.luogu.com.cn/problem/CF1324F,https://vjudge.net/problem/CodeForces-1324F
 CF624C,"",CodeForces,,https://vjudge.net/problem/CodeForces-624C
-CF1396B,"Stoned Game",CodeForces,https://www.luogu.com.cn/problem/CF1396B,https://vjudge.net/problem/CodeForces-1396B
-CF1719D2,"",CodeForces,,https://vjudge.net/problem/CodeForces-1719D2
