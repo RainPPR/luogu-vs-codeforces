@@ -4,3 +4,6 @@ plugins:
 show_downloads: [true]
 title: [luogu vs codeforces]
 description: [codeforces for sure]
+github:
+  zip_url: https://github.com/RainPPR/luogu-vs-codeforces/zipball/main
+  tar_url: https://github.com/RainPPR/luogu-vs-codeforces/tarball/main
