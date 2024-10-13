@@ -6,8 +6,6 @@ using json = nlohmann::json;
 
 using namespace std;
 
-#define unordered_set set
-
 // -----------------------------------------------------------------------------
 
 int run(string op) {
@@ -33,13 +31,13 @@ unordered_set<string> get_luogu(uint64_t uid) {
 	return ac_luogu_cf;
 }
 
-unordered_set<string> get_codeforces(string name) {
+set<string> get_codeforces(string name) {
 	string filename = "./data/" + name + ".json";
 
 	run("curl https://ojhunt.com/api/crawlers/codeforces/" + name + " -o " + filename);
 
 	ifstream f(filename);
-	unordered_set<string> ac_cf;
+	set<string> ac_cf;
 
 	auto problems = json::parse(f)["data"]["solvedList"];
 	for (string problem : problems) {
