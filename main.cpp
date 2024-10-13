@@ -6,6 +6,8 @@ using json = nlohmann::json;
 
 using namespace std;
 
+#define unordered_set set
+
 // -----------------------------------------------------------------------------
 
 int run(string op) {
@@ -87,7 +89,7 @@ signed main() {
 
 		if (title.empty())
 			luogu_url = "";
-		fout << "CF" + pid << ",\"" << title << "\",CodeForces," + luogu_url + "," + vjudge_url << endl;
+		else fout << "CF" + pid << ",\"" << title << "\",CodeForces," + luogu_url + "," + vjudge_url << endl;
 	}
 
 	fout.close();
